@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Embedded</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
+    </head>
+    <body>
+      <div class="grid-container" id="all" onmouseup="mouseUp()">
+        <div class="grid-item" id="count_panel">
+          <div class="people">
+                <h2 id="people_count"> 0 </h2>
+                <h1>Visitor counts</h1>
+          </div>
+        </div>
+        <div class="grid-item" id="button_panel">
+          <button class="box" id="button_box">
+            manual
+          </button>
+        </div>
+        <div class="grid-item" id="slider_panel">
+          <div class="slideContainer">
+                <input type="range" min="1" max="100" value="1" id="myRange" class="slider">
+                <p>Opacity: <span id="value"></span></p>
+            </div>
+        </div>
+        <script src="script.js"></script>
+      </div>
+    </body>
+</html>
